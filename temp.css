@@ -1,0 +1,402 @@
+/* global */
+* {
+	border: 1px solid red;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #1c1c21;
+	width: 100%;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+}
+
+ul.icons {
+  position:absolute;
+  top:25%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+ul.icons li {
+  list-style: none;
+}
+
+ul.icons li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+ul.icons li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+ul.icons li a .fab {
+  widht: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul.icons li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+ul.icons li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+ul.icons li:nth-child(3) a:hover .fab {
+  color: #dd4b39;
+}
+
+ul.icons li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+ul.icons li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
+
+
+header {
+	margin-top: 0;
+	position: absolute;
+	top: 0;
+}
+
+/* Nav Bar */
+#nav {
+	background-color: #1c1c21;
+	min-height: 100px;
+	position: fixed;
+	width: 100%;
+}
+
+
+#nav ul {
+	list-style: none;
+	padding-left: 5%;
+}
+
+#nav li {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 40px;
+	font-size: 20px;
+}
+
+#nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+#nav li a:hover {
+	color: coral;
+}
+
+/* banner */
+#banner {
+	margin-top: 100px;
+	background: #1c1c1c;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.avatar ,#banner h1 {
+	padding-top: 100px;
+	color: white;
+	font-size: 60px;
+	font-family: sans-serif;
+	line-height: 1.5em;
+	font-weight: 700;
+	transition: 1.5s ease;
+	transition-delay: 0.01s;
+}
+
+#banner p {
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+/* resume button */
+.btn {
+	margin-top: 5%;
+	width: 20%;
+	background: #1c1c1c;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+}
+
+.btn a {
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: white;
+}
+
+.btn a:hover {
+	color: springgreen;
+}
+
+/* footer */
+footer {
+	width: 100%;
+	background: #1c1c21;
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 15px;
+	min-height: 35px;
+}
+
+/* Skills */
+.skill {
+	padding-top: 30px;
+	background: #1c1c1c;
+	min-height: 100vh;
+}
+
+.skill ul {
+	padding: 0px;
+	list-style: none;
+}
+
+.skill li {
+	color: white;
+	font-family: sans-serif;
+	display: inline-block;
+	width: 45%;
+	margin: 20px;
+	border: 2px solid grey;
+	border-radius: 10px;
+}
+
+.skill li h3, p {
+	padding: 10px;
+	text-align: center;
+}
+
+.skill li h3 {
+	padding-bottom: 0px;
+}
+
+.skill li p{
+	line-height: 1.5em;
+}
+
+.skill li p a:hover {
+	opacity: 0.8;
+}
+
+
+/* Contact */
+.contact {
+	background: #1c1c1c;
+	margin-top: -80px;
+	margin-bottom: -25px;
+	min-height: 100vh;
+}
+
+.contact img {
+	width: 3%;
+	margin-top: 5%;
+	margin-left: 16%;
+	transition: 1.5s ease;
+}
+
+.contact p {
+	color: white;
+	font-family: sans-serif;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 5%;
+	line-height: 1.5em;
+}
+
+.contact img:hover {
+	opacity: 0.4;
+}
+
+.divline {
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 15%;
+	margin: auto;
+}
+
+.form {
+	width: 25%;
+	margin: auto;
+	border: 1px white solid;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 30px;
+	transition: width 2s ease;
+}
+
+.form:hover {
+	width: 30%;
+}
+
+.form label{
+	color: white;
+	font-family: sans-serif;
+	margin: 10px;
+}
+
+.form input{
+	width: 72%;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.form textarea {
+	width: 72%;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 15px;
+	font-family: sans-serif;
+}
+
+.main {
+	padding: 16px;
+	margin-top: 30px;
+	height: 1500px; /* Used in this contact page to enable scrolling */
+}
+
+/* media tags */
+/* for all devices other than laptops  */
+/* ipad pro screen width = 1024px */
+
+@media screen and (max-width: 1025px) {
+
+	/* Global */
+	.container {
+		width: 90%;
+	}
+
+	/* Home */
+	#nav {
+		min-height: 55px;
+	}
+
+	#nav li {
+		padding-top: 20px;
+		font-size: 13px;
+	}
+
+	#banner h1 {
+		padding-top: 30%;
+		font-size: 30px;
+	}
+
+	#banner p {
+		font-size: 15px;
+	}
+
+	/* resume button */
+	.btn {
+		width: 40%;
+		font-size: 13px;
+	}
+
+	.btn a {
+		font-size: 10px;
+		padding-bottom: 5px;
+	}
+
+	/* For skills and projects */
+	.skill li {
+		width: 95%;
+		margin: 10px;
+	}
+
+	/* Contact */
+	.contact img {
+		width: 5%;
+		margin-top: 10%;
+	}
+
+	.contact p {
+		font-size: 15px;
+		margin-top: 5%;
+	}
+
+	.form {
+		width: 60%;
+	}
+
+	.form:hover {
+		width: 65%;
+	}
+
+	.form input{
+		font-size: 13px;
+	}
+
+	.form label {
+		font-size: 13px;
+	}
+
+	/* footer */
+	footer {
+		font-size: 10px;
+		min-height: 10px;
+		border-bottom: 0;
+	}
+
+}
